@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "nx build",
-    "format": "prettier --write \"apps/server/src/**/*.ts\" ",
+    "formatP": "prettier --write \"apps/server/src/**/*.ts\" ",
     "lint": "eslint \"apps/server/src/**/*.ts\" --fix",
     "pre-commit": "lint-staged",
     "start": "nx serve",
