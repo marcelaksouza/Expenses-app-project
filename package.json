@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@nrwl/js": "^14.5.4"
+  }
+}
