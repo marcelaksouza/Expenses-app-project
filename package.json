@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"packages/server/src/**/*.+(js|json|ts|tsx)\"",
-    "format": "prettier --write \"packages/server/src/**/*.ts\" "
+    "lint-staged": "eslint \"packages/server/src/**/*.{js,json,ts,tsx}\"",
+    "format": "prettier --write \"packages/server/src/**/*.{ts,css,html}\" "
   },
   "private": true,
   "dependencies": {
