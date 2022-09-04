@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "eslint": "eslint \"packages/server/src/**/*.{js,json,css,scss,md,ts,html,graphql}\"",
-    "format": "prettier --write \"packages/**/\\*.{js,json,css,scss,md,ts,html,graphql}\""
+    "format": "nx format:write",
+    "format:write": "nx format:write"
   },
   "private": true,
   "dependencies": {
@@ -13,7 +14,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@nrwl/cli": "14.5.4",
+    "@nrwl/cli": "^14.6.4",
     "@nrwl/eslint-plugin-nx": "14.5.4",
     "@nrwl/jest": "14.5.4",
     "@nrwl/js": "14.5.4",
@@ -39,6 +40,11 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,md,ts,html,graphql}": [
+      "yarn format --uncommitted"
     ]
   }
 }
